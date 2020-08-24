@@ -1,6 +1,6 @@
 {
     "game_time": "2020-08-23T20:10Z",
-    "excerpt": "\u52dd\u5229\u6295\u624b:\nLiam Hendriks\n1.0 IP, 0 ER, 0 K, 0 BB\n\n\u6557\u6230\u6295\u624b:\nTy Buttrey\n0.2 IP, 0 ER, 1 K, 0 BB",
+    "excerpt": "勝利投手:\nLiam Hendriks\n1.0 IP, 0 ER, 0 K, 0 BB\n\n敗戰投手:\nTy Buttrey\n0.2 IP, 0 ER, 1 K, 0 BB",
     "away": {
         "team_score": {
             "1": 0,
@@ -19,254 +19,875 @@
         },
         "abbreviation": "LAA",
         "team_full_name": "Los Angeles Angels",
-        "mandarin_name": "\u6d1b\u6749\u78ef\u5929\u4f7f",
-        "mandarin_abbr": "\u5929\u4f7f",
+        "mandarin_name": "洛杉磯天使",
+        "mandarin_abbr": "天使",
         "color1": "#C8102E",
         "color2": "#1D42BA",
         "streak": "9-20",
         "hitters": [
             {
-                "H-AB": "0-4",
-                "AB": 4,
-                "R": 0,
-                "H": 0,
-                "RBI": 0,
-                "BB": 2,
-                "K": 0,
-                "#P": 22,
-                "AVG": 0.306,
-                "OBP": 0.372,
-                "SLG": 0.455,
-                "Postion": "2B",
-                "Players": "D. Fletcher"
+                "H-AB": {
+                    "text": "0-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 22,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.306,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.372,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.455,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "2B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "D. Fletcher",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-5",
-                "AB": 5,
-                "R": 0,
-                "H": 2,
-                "RBI": 0,
-                "BB": 0,
-                "K": 0,
-                "#P": 22,
-                "AVG": 0.269,
-                "OBP": 0.361,
-                "SLG": 0.452,
-                "Postion": "1B",
-                "Players": "T. La Stella"
+                "H-AB": {
+                    "text": "2-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 22,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.269,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.361,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.452,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "1B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "T. La Stella",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "0-4",
-                "AB": 4,
-                "R": 1,
-                "H": 0,
-                "RBI": 0,
-                "BB": 1,
-                "K": 2,
-                "#P": 27,
-                "AVG": 0.27,
-                "OBP": 0.342,
-                "SLG": 0.61,
-                "Postion": "CF",
-                "Players": "M. Trout"
+                "H-AB": {
+                    "text": "0-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 27,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.27,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.342,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.61,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "CF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Trout",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-5",
-                "AB": 5,
-                "R": 2,
-                "H": 2,
-                "RBI": 0,
-                "BB": 0,
-                "K": 0,
-                "#P": 15,
-                "AVG": 0.319,
-                "OBP": 0.451,
-                "SLG": 0.56,
-                "Postion": "3B",
-                "Players": "A. Rendon"
+                "H-AB": {
+                    "text": "2-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 15,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.319,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.451,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.56,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "3B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "A. Rendon",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-4",
-                "AB": 4,
-                "R": 1,
-                "H": 2,
-                "RBI": 3,
-                "BB": 1,
-                "K": 1,
-                "#P": 18,
-                "AVG": 0.181,
-                "OBP": 0.261,
-                "SLG": 0.41,
-                "Postion": "DH",
-                "Players": "S. Ohtani"
+                "H-AB": {
+                    "text": "2-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 18,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.181,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.261,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.41,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "DH",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "S. Ohtani",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-4",
-                "AB": 4,
-                "R": 0,
-                "H": 1,
-                "RBI": 1,
-                "BB": 1,
-                "K": 2,
-                "#P": 20,
-                "AVG": 0.241,
-                "OBP": 0.32,
-                "SLG": 0.471,
-                "Postion": "LF",
-                "Players": "B. Goodwin"
+                "H-AB": {
+                    "text": "1-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 20,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.241,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.32,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.471,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "LF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "B. Goodwin",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "0-5",
-                "AB": 5,
-                "R": 0,
-                "H": 0,
-                "RBI": 0,
-                "BB": 0,
-                "K": 3,
-                "#P": 15,
-                "AVG": 0.196,
-                "OBP": 0.255,
-                "SLG": 0.216,
-                "Postion": "RF",
-                "Players": "J. Adell"
+                "H-AB": {
+                    "text": "0-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 15,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.196,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.255,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.216,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "RF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "J. Adell",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "0-3",
-                "AB": 3,
-                "R": 0,
-                "H": 0,
-                "RBI": 0,
-                "BB": 2,
-                "K": 1,
-                "#P": 30,
-                "AVG": 0.2,
-                "OBP": 0.333,
-                "SLG": 0.422,
-                "Postion": "C",
-                "Players": "J. Castro"
+                "H-AB": {
+                    "text": "0-3",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 30,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.2,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.333,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.422,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "C",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "J. Castro",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-5",
-                "AB": 5,
-                "R": 0,
-                "H": 2,
-                "RBI": 0,
-                "BB": 0,
-                "K": 1,
-                "#P": 19,
-                "AVG": 0.28,
-                "OBP": 0.28,
-                "SLG": 0.32,
-                "Postion": "SS",
-                "Players": "A. Simmons"
+                "H-AB": {
+                    "text": "2-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 19,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.28,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.28,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.32,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "SS",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "A. Simmons",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "9-39",
-                "AB": 39,
-                "R": 4,
-                "H": 9,
-                "RBI": 4,
-                "BB": 7,
-                "K": 10,
-                "#P": 188,
-                "AVG": "",
-                "OBP": "",
-                "SLG": "",
-                "Postion": "",
-                "Players": ""
+                "H-AB": {
+                    "text": "9-39",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 39,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 9,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 7,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 10,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 188,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "",
+                    "highlight": ""
+                }
             }
         ],
         "pitchers": [
             {
-                "IP": 5.2,
-                "H": 7,
-                "R": 4,
-                "ER": 2,
-                "BB": 1,
-                "K": 6,
-                "HR": 0,
-                "PC-ST": "101-66",
-                "ERA": 2.58,
-                "PC": 101,
-                "Players": "D. Bundy"
+                "IP": {
+                    "text": 5.2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 7,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 6,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "101-66",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 2.58,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 101,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "D. Bundy",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 0.1,
-                "H": 1,
-                "R": 0,
-                "ER": 0,
-                "BB": 0,
-                "K": 0,
-                "HR": 0,
-                "PC-ST": "7-4",
-                "ERA": 3.6,
-                "PC": 7,
-                "Players": "M. Mayers"
+                "IP": {
+                    "text": 0.1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "7-4",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 3.6,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 7,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Mayers",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 1.0,
-                "H": 0,
-                "R": 0,
-                "ER": 0,
-                "BB": 0,
-                "K": 2,
-                "HR": 0,
-                "PC-ST": "10-8",
-                "ERA": 1.84,
-                "PC": 10,
-                "Players": "F. Pe\u00f1a"
+                "IP": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "10-8",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 1.84,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 10,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "F. Peña",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 1.0,
-                "H": 0,
-                "R": 0,
-                "ER": 0,
-                "BB": 0,
-                "K": 2,
-                "HR": 0,
-                "PC-ST": "19-14",
-                "ERA": 9.9,
-                "PC": 19,
-                "Players": "H. Robles"
+                "IP": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "19-14",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 9.9,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 19,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "H. Robles",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 0.2,
-                "H": 0,
-                "R": 0,
-                "ER": 0,
-                "BB": 1,
-                "K": 1,
-                "HR": 0,
-                "PC-ST": "12-7",
-                "ERA": 3.65,
-                "PC": 12,
-                "Players": "N. Ramirez"
+                "IP": {
+                    "text": 0.2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "12-7",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 3.65,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 12,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "N. Ramirez",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 0.2,
-                "H": 1,
-                "R": 1,
-                "ER": 0,
-                "BB": 0,
-                "K": 1,
-                "HR": 0,
-                "PC-ST": "18-10",
-                "ERA": 2.7,
-                "PC": 18,
-                "Players": "T. Buttrey"
+                "IP": {
+                    "text": 0.2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "18-10",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 2.7,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 18,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "T. Buttrey",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 9.1,
-                "H": 9,
-                "R": 5,
-                "ER": 2,
-                "BB": 2,
-                "K": 12,
-                "HR": 0,
-                "PC-ST": "167-109",
-                "ERA": "",
-                "PC": 167,
-                "Players": ""
+                "IP": {
+                    "text": 9.1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 9,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 12,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "167-109",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 167,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "",
+                    "highlight": ""
+                }
             }
         ]
     },
@@ -288,256 +909,883 @@
         },
         "abbreviation": "OAK",
         "team_full_name": "Oakland Athletics",
-        "mandarin_name": "\u5967\u514b\u862d\u904b\u52d5\u5bb6",
-        "mandarin_abbr": "\u904b\u52d5\u5bb6",
+        "mandarin_name": "奧克蘭運動家",
+        "mandarin_abbr": "運動家",
         "color1": "#002D62",
         "color2": "#FDBB30",
         "streak": "20-9",
         "hitters": [
             {
-                "H-AB": "0-4",
-                "AB": 4,
-                "R": 1,
-                "H": 0,
-                "RBI": 0,
-                "BB": 1,
-                "K": 0,
-                "#P": 21,
-                "AVG": 0.202,
-                "OBP": 0.256,
-                "SLG": 0.339,
-                "Postion": "SS",
-                "Players": "M. Semien"
+                "H-AB": {
+                    "text": "0-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 21,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.202,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.256,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.339,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "SS",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Semien",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-3",
-                "AB": 3,
-                "R": 0,
-                "H": 1,
-                "RBI": 0,
-                "BB": 1,
-                "K": 0,
-                "#P": 24,
-                "AVG": 0.233,
-                "OBP": 0.37,
-                "SLG": 0.384,
-                "Postion": "CF",
-                "Players": "R. Laureano"
+                "H-AB": {
+                    "text": "1-3",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 24,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.233,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.37,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.384,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "CF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "R. Laureano",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "0-5",
-                "AB": 5,
-                "R": 0,
-                "H": 0,
-                "RBI": 0,
-                "BB": 0,
-                "K": 3,
-                "#P": 20,
-                "AVG": 0.17,
-                "OBP": 0.302,
-                "SLG": 0.443,
-                "Postion": "1B",
-                "Players": "M. Olson"
+                "H-AB": {
+                    "text": "0-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 20,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.17,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.302,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.443,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "1B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Olson",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "0-0",
-                "AB": 0,
-                "R": 1,
-                "H": 0,
-                "RBI": 0,
-                "BB": 0,
-                "K": 0,
-                "#P": 0,
-                "AVG": 0.0,
-                "OBP": 0.0,
-                "SLG": 0.0,
-                "Postion": "PR",
-                "Players": "F. Barreto"
+                "H-AB": {
+                    "text": "0-0",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "PR",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "F. Barreto",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-5",
-                "AB": 5,
-                "R": 1,
-                "H": 2,
-                "RBI": 1,
-                "BB": 0,
-                "K": 1,
-                "#P": 20,
-                "AVG": 0.256,
-                "OBP": 0.296,
-                "SLG": 0.598,
-                "Postion": "3B",
-                "Players": "M. Chapman"
+                "H-AB": {
+                    "text": "2-5",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 20,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.256,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.296,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.598,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "3B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Chapman",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-4",
-                "AB": 4,
-                "R": 0,
-                "H": 1,
-                "RBI": 2,
-                "BB": 0,
-                "K": 1,
-                "#P": 26,
-                "AVG": 0.281,
-                "OBP": 0.41,
-                "SLG": 0.458,
-                "Postion": "DH",
-                "Players": "M. Canha"
+                "H-AB": {
+                    "text": "1-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 26,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.281,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.41,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.458,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "DH",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "M. Canha",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-4",
-                "AB": 4,
-                "R": 1,
-                "H": 1,
-                "RBI": 0,
-                "BB": 0,
-                "K": 3,
-                "#P": 21,
-                "AVG": 0.288,
-                "OBP": 0.435,
-                "SLG": 0.603,
-                "Postion": "LF",
-                "Players": "R. Grossman"
+                "H-AB": {
+                    "text": "1-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 21,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.288,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.435,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.603,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "LF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "R. Grossman",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "2-4",
-                "AB": 4,
-                "R": 1,
-                "H": 2,
-                "RBI": 1,
-                "BB": 0,
-                "K": 1,
-                "#P": 11,
-                "AVG": 0.253,
-                "OBP": 0.305,
-                "SLG": 0.448,
-                "Postion": "RF",
-                "Players": "S. Piscotty"
+                "H-AB": {
+                    "text": "2-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 11,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.253,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.305,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.448,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "RF",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "S. Piscotty",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-4",
-                "AB": 4,
-                "R": 0,
-                "H": 1,
-                "RBI": 0,
-                "BB": 0,
-                "K": 0,
-                "#P": 10,
-                "AVG": 0.241,
-                "OBP": 0.369,
-                "SLG": 0.278,
-                "Postion": "2B",
-                "Players": "T. Kemp"
+                "H-AB": {
+                    "text": "1-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 10,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.241,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.369,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.278,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "2B",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "T. Kemp",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "1-4",
-                "AB": 4,
-                "R": 0,
-                "H": 1,
-                "RBI": 1,
-                "BB": 0,
-                "K": 3,
-                "#P": 14,
-                "AVG": 0.233,
-                "OBP": 0.361,
-                "SLG": 0.383,
-                "Postion": "C",
-                "Players": "S. Murphy"
+                "H-AB": {
+                    "text": "1-4",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 14,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": 0.233,
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": 0.361,
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": 0.383,
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "C",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "S. Murphy",
+                    "highlight": ""
+                }
             },
             {
-                "H-AB": "9-37",
-                "AB": 37,
-                "R": 5,
-                "H": 9,
-                "RBI": 5,
-                "BB": 2,
-                "K": 12,
-                "#P": 167,
-                "AVG": "",
-                "OBP": "",
-                "SLG": "",
-                "Postion": "",
-                "Players": ""
+                "H-AB": {
+                    "text": "9-37",
+                    "highlight": ""
+                },
+                "AB": {
+                    "text": 37,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 9,
+                    "highlight": ""
+                },
+                "RBI": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 12,
+                    "highlight": ""
+                },
+                "#P": {
+                    "text": 167,
+                    "highlight": ""
+                },
+                "AVG": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "OBP": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "SLG": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "Postion": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "",
+                    "highlight": ""
+                }
             }
         ],
         "pitchers": [
             {
-                "IP": 4.2,
-                "H": 7,
-                "R": 4,
-                "ER": 4,
-                "BB": 3,
-                "K": 5,
-                "HR": 1,
-                "PC-ST": "96-56",
-                "ERA": 5.22,
-                "PC": 96,
-                "Players": "F. Montas"
+                "IP": {
+                    "text": 4.2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 7,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 4,
+                    "highlight": "bad"
+                },
+                "BB": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 5,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "96-56",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 5.22,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 96,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "F. Montas",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 1.1,
-                "H": 1,
-                "R": 0,
-                "ER": 0,
-                "BB": 1,
-                "K": 2,
-                "HR": 0,
-                "PC-ST": "32-18",
-                "ERA": 2.19,
-                "PC": 32,
-                "Players": "J.B. Wendelken"
+                "IP": {
+                    "text": 1.1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "32-18",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 2.19,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 32,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "J.B. Wendelken",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 2.0,
-                "H": 1,
-                "R": 0,
-                "ER": 0,
-                "BB": 1,
-                "K": 3,
-                "HR": 0,
-                "PC-ST": "32-24",
-                "ERA": 0.0,
-                "PC": 32,
-                "Players": "J. Diekman"
+                "IP": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 3,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "32-24",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 32,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "J. Diekman",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 1.0,
-                "H": 0,
-                "R": 0,
-                "ER": 0,
-                "BB": 2,
-                "K": 0,
-                "HR": 0,
-                "PC-ST": "16-6",
-                "ERA": 1.32,
-                "PC": 16,
-                "Players": "J. Soria"
+                "IP": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 2,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "16-6",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 1.32,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 16,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "J. Soria",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 1.0,
-                "H": 0,
-                "R": 0,
-                "ER": 0,
-                "BB": 0,
-                "K": 0,
-                "HR": 0,
-                "PC-ST": "11-7",
-                "ERA": 1.17,
-                "PC": 11,
-                "Players": "L. Hendriks"
+                "IP": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 0,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "11-7",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": 1.17,
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 11,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "L. Hendriks",
+                    "highlight": ""
+                }
             },
             {
-                "IP": 10.0,
-                "H": 9,
-                "R": 4,
-                "ER": 4,
-                "BB": 7,
-                "K": 10,
-                "HR": 1,
-                "PC-ST": "187-111",
-                "ERA": "",
-                "PC": 187,
-                "Players": ""
+                "IP": {
+                    "text": 10,
+                    "highlight": ""
+                },
+                "H": {
+                    "text": 9,
+                    "highlight": ""
+                },
+                "R": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "ER": {
+                    "text": 4,
+                    "highlight": ""
+                },
+                "BB": {
+                    "text": 7,
+                    "highlight": ""
+                },
+                "K": {
+                    "text": 10,
+                    "highlight": ""
+                },
+                "HR": {
+                    "text": 1,
+                    "highlight": ""
+                },
+                "PC-ST": {
+                    "text": "187-111",
+                    "highlight": ""
+                },
+                "ERA": {
+                    "text": "",
+                    "highlight": ""
+                },
+                "PC": {
+                    "text": 187,
+                    "highlight": ""
+                },
+                "Players": {
+                    "text": "",
+                    "highlight": ""
+                }
             }
         ]
     }

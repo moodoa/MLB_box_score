@@ -160,153 +160,165 @@ class MLBFeeder():
             players["Postion"] = players["Hitters"].apply(lambda x:x.split("/")[1] if "/" in x else "")
             players["Players"] = players["Hitters"].apply(lambda x:x.split("/")[0] if "/" in x else "")
             players.drop(columns="Hitters", inplace=True)
+            players.fillna("", inplace=True)
+            players = self._set_highlight_hitters(players)
         elif hitterOrPitcher == "pitchers":
             players["Players"] = players["Pitchers"].apply(lambda x:x.split("/")[0] if "/" in x else "")
             players.drop(columns="Pitchers", inplace=True)
-        players.fillna("", inplace=True)
+            players.fillna("", inplace=True)
+            players = self._set_highlight_pitchers(players)
         players_json = json.loads(players.to_json(orient="records"))
         return players_json
 
 
-#     def _set_highlight(self, df):
-#             players_df = df.iloc[:-2]
-#             total_df = df.iloc[-2:]
-#             for column in players_df.columns:
-#                 if column == "MIN":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":"good"} 
-#                         if str(x).isdigit() and int(x) > 40 
-#                         else {"text":x, "highlight":""}
-#                     )
-#                 elif column == "Players":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._is_triple_double(x, players_df)}
-#                     )
-#                 elif column == "FG":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_fg_highlight(x)}
-#                     )
-#                 elif column == "3PT":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_3pt_highlight(x)}
-#                     )
-#                 elif column == "FT":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_ft_highlight(x)}
-#                     )
-#                 elif column in ["OREB", "DREB", "REB", "AST", "STL", "BLK"]:
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_stat_highlight(x)}
-#                     )
-#                 elif column in ["TO", "PF"]:
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_negative_stat_highlight(x)}
-#                     )
-#                 elif column == "PTS":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x: {"text":x, "highlight":self._get_points_highlight(x)}
-#                     )
-#                 elif column == "+/-":
-#                     players_df[column] = players_df[column].apply(
-#                         lambda x:{"text":x, "highlight":self._get_plusminus_highlight(x)}
-#                     )
-#                 elif column in ["DNP", "STARTER"]:
-#                     pass
-#             for column in total_df.columns:
-#                 if column in ["DNP", "STARTER"]:
-#                     pass
-#                 else:
-#                     total_df[column] = total_df[column].apply(
-#                         lambda x:{"text":x, "highlight":""}
-#                     )
-#             df = pd.concat([players_df, total_df])
-#             return df
+    def _set_highlight_hitters(self, df):
+        players_df = df.iloc[:-1]
+        total_df = df.iloc[-1:]
+        for column in players_df.columns:
+            if column == "R":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_R_hitters_highlight(x)}
+                )
+            elif column == "H":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_H_hitters_highlight(x)}
+                )
+            elif column == "RBI":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_RBI_hitters_highlight(x)}
+                )
+            elif column == "BB":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_BB_hitters_highlight(x)}
+                )
+            elif column == "K":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_K_hitters_highlight(x)}
+                )
+            elif column == "AVG":
+                players_df[column] = players_df[column].apply(
+                    lambda x:{"text":x, "highlight":self._get_AVG_hitters_highlight(x)}
+                )
+            else:
+                players_df[column] = players_df[column].apply(
+                    lambda x:{"text":x, "highlight":""}
+                )
+        for column in total_df.columns:
+            total_df[column] = total_df[column].apply(
+                    lambda x:{"text":x, "highlight":""}
+                )
+        df = pd.concat([players_df, total_df])
+        return df
 
-#     def _is_triple_double(self, player, df):
-#         positive_stat = []
-#         for column in ["REB", "AST", "STL", "BLK", "PTS"]:
-#             try:
-#                 positive_stat.append(int(df[df["Players"] == player][column].values[0]))
-#             except:
-#                 positive_stat.append(0)
-#         count = 0 
-#         for stat in positive_stat:
-#             if stat >= 10:
-#                 count +=1
-#         # 如果未來有大三元需求可在這調整
-#         return "" if count >= 3 else ""
-        
-#     def _get_fg_highlight(self, shoot_made_attempted):
-#         if self._is_percentage(shoot_made_attempted):
-#             made = int(shoot_made_attempted.split("-")[0])
-#             attempted = int(shoot_made_attempted.split("-")[1])
-#             if made/attempted >= 0.7:
-#                 return "good"
-#             elif made/attempted < 0.3:
-#                 return "bad"
-#         return ""
+    def _set_highlight_pitchers(self, df):
+        players_df = df.iloc[:-1]
+        total_df = df.iloc[-1:]
+        for column in players_df.columns:
+            if column == "ER":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_ER_pitchers_highlight(x)}
+                )
+            elif column == "H":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_H_pithers_highlight(x)}
+                )
+            elif column == "BB":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_BB_pitchers_highlight(x)}
+                )
+            elif column == "K":
+                players_df[column] = players_df[column].apply(
+                    lambda x: {"text":x, "highlight":self._get_K_pitchers_highlight(x)}
+                )
+            elif column == "HR":
+                players_df[column] = players_df[column].apply(
+                    lambda x:{"text":x, "highlight":self._get_HR_pitchers_highlight(x)}
+                )
+            else:
+                players_df[column] = players_df[column].apply(
+                    lambda x:{"text":x, "highlight":""}
+                )
+        for column in total_df.columns:
+            total_df[column] = total_df[column].apply(
+                    lambda x:{"text":x, "highlight":""}
+                )
+        df = pd.concat([players_df, total_df])
+        return df
 
-#     def _get_3pt_highlight(self, shoot_made_attempted):
-#         if self._is_percentage(shoot_made_attempted):
-#             made = int(shoot_made_attempted.split("-")[0])
-#             attempted = int(shoot_made_attempted.split("-")[1])
-#             if made/attempted >= 0.5:
-#                 return "good"
-#             elif made/attempted <= 0.25:
-#                 return "bad"
-#         return ""
 
-#     def _get_ft_highlight(self, shoot_made_attempted):
-#         if self._is_percentage(shoot_made_attempted):
-#             made = int(shoot_made_attempted.split("-")[0])
-#             attempted = int(shoot_made_attempted.split("-")[1])
-#             if made/attempted >= 0.9:
-#                 return "good"
-#             elif made/attempted <= 0.5:
-#                 return "bad"
-#         return ""
-
-#     def _is_percentage(self, shoot_made_attempted):
-#         attempted = 0
-#         if shoot_made_attempted[0].isdigit() and "-" in shoot_made_attempted:
-#             attempted = int(shoot_made_attempted.split("-")[1])
-#         return True if attempted > 0 else False
-
-#     def _get_stat_highlight(self, stat):
-#         if self.is_number(str(stat)):
-#             if float(stat) >= 10:
-#                 return "good"
-#         return ""
+    def _get_R_hitters_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>3:
+                return "good"
+        return ""
     
-#     def _get_negative_stat_highlight(self, stat):
-#         if self.is_number(str(stat)):
-#             if float(stat) == 0:
-#                 return "good"
-#             elif float(stat) >= 6:
-#                 return "bad"
-#         return ""
+    def _get_ER_pitchers_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>3:
+                return "bad"
+        return ""
 
-#     def _get_plusminus_highlight(self, stat):
-#         if self.is_number(str(stat)):
-#             if float(stat) >= 20:
-#                 return "good"
-#             elif float(stat) <=-20:
-#                 return "bad"
-#         return ""
+    def _get_H_hitters_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>5:
+                return "good"
+        return ""
 
-#     def _get_points_highlight(self, points):
-#         if self.is_number(str(points)):
-#             if float(points) >= 30:
-#                 return "good"
-#         return ""
+    def _get_H_pithers_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>7:
+                return "bad"
+        return ""
 
-#     def is_number(self, num):
-#         pattern = re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$')
-#         result = pattern.match(num)
-#         return True if result else False
+    def _get_RBI_hitters_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>3:
+                return "good"
+        return ""
+
+    def _get_BB_hitters_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>3:
+                return "good"
+        return ""
+
+    def _get_BB_pitchers_highlight(self, x):
+        if str(x).isdigit():
+            if float(x) > 6:
+                return "bad"
+        return ""
+
+    def _get_K_hitters_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>3:
+                return "bad"
+        return ""
+
+    def _get_K_pitchers_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>6:
+                return "good"
+        return ""
+
+    def _get_AVG_hitters_highlight(self, x):
+        try:
+            if float(x)>0.333:
+                return "good"
+        except:
+            return ""
+        return ""
+
+    def _get_HR_pitchers_highlight(self, x):
+        if str(x).isdigit():
+            if float(x)>=3:
+                return "bad"
+        return ""
+
+
 if __name__ == "__main__":
     feed_day = datetime.now() - timedelta(days = 1)
     feeder = MLBFeeder(feed_day)
+    # print(feeder._get_game_stats("401226097"))
     data = feeder._get_game_stats("401226097")
     with open("example.json", "w", encoding="utf-8") as file:
         json.dump(data, file)
