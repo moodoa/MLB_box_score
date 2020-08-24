@@ -307,4 +307,6 @@ class MLBFeeder():
 if __name__ == "__main__":
     feed_day = datetime.now() - timedelta(days = 1)
     feeder = MLBFeeder(feed_day)
-    print(feeder._get_game_stats("401226097"))
+    data = feeder._get_game_stats("401226097")
+    with open("example.json", "w", encoding="utf-8") as file:
+        json.dump(data, file)
